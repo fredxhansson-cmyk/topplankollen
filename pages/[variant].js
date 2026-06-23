@@ -7,10 +7,10 @@ var PC = '#1d4ed8';
 var SITE = 'Topplånkollen';
 var BASE_URL = 'https://topplanenkollen.vercel.app';
 var YEAR = new Date().getFullYear();
-var _TB = 'axiom-engine-production-54c3.up.railway.app/r';
+var _TB = 'https://axiom-engine-production-54c3.up.railway.app/r';
 var _SL = 'topplanenkollen';
 function _aff(name, url) {
-  if (_TB && _TB !== '/r') return _TB + '?p=' + encodeURIComponent(name) + '&url=' + encodeURIComponent(url) + '&site=' + _SL;
+  if (_TB && _TB.startsWith('http')) return _TB + '?p=' + encodeURIComponent(name) + '&url=' + encodeURIComponent(url) + '&site=' + _SL;
   return url;
 }
 export function getStaticPaths() { return { paths: _paths, fallback: false }; }
