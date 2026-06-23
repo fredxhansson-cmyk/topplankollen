@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const WEB_PAGE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Topplånen för småföretagare 2026 | Jämför & Spara\",\"description\":\"Topplånen för småföretagare 2026 ✓ Jämför 7 leverantörer ✓ Uppdaterad 2026. Hitta bästa lånet nu!\",\"url\":\"https://topplanenkollen.vercel.app\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"inLanguage\":\"sv-SE\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Topplånkollen\",\"url\":\"https://topplanenkollen.vercel.app\"},\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hem\",\"item\":\"https://topplanenkollen.vercel.app\"}]}}";
-const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Topplånen för småföretagare 2026 — Jämför 7 Alternativ — Jämförelse 2026\",\"description\":\"Hitta det bästa lånet för ditt företag 2026\",\"numberOfItems\":7,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Lendo\",\"url\":\"https://www.lendo.se\",\"description\":\"Jämför lån från 40+ banker på en enda ansökan\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.8\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"336\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Sambla\",\"url\":\"https://www.sambla.se\",\"description\":\"Marknadens lägsta ränta — upp till 800 000 kr\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.7\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"168\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"Zmarta\",\"url\":\"https://www.zmarta.se\",\"description\":\"Specialister på att samla och sänka dina lån\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"207\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Advisa\",\"url\":\"https://www.advisa.se\",\"description\":\"Snabbast svar — besked inom en minut\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"227\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Credigo\",\"url\":\"https://www.credigo.se\",\"description\":\"Flexibla återbetalningstider utan uppläggningsavgift\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"229\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"Ferratum\",\"url\":\"https://www.ferratum.se\",\"description\":\"Snabb utbetalning — pengarna på kontot samma dag\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"121\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"Svea Ekonomi\",\"url\":\"https://www.svea.com\",\"description\":\"Etablerat finansbolag med breda lånemöjligheter\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"3.9\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"366\"}}}]}";
+const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Topplånen för småföretagare 2026 — Jämför 7 Alternativ — Jämförelse 2026\",\"description\":\"Hitta det bästa lånet för ditt företag 2026\",\"numberOfItems\":7,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Lendo\",\"url\":\"https://www.lendo.se\",\"description\":\"Jämför lån från 40+ banker på en enda ansökan\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.8\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"375\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Sambla\",\"url\":\"https://www.sambla.se\",\"description\":\"Marknadens lägsta ränta — upp till 800 000 kr\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.7\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"253\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"Zmarta\",\"url\":\"https://www.zmarta.se\",\"description\":\"Specialister på att samla och sänka dina lån\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"159\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Advisa\",\"url\":\"https://www.advisa.se\",\"description\":\"Snabbast svar — besked inom en minut\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"380\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Credigo\",\"url\":\"https://www.credigo.se\",\"description\":\"Flexibla återbetalningstider utan uppläggningsavgift\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"121\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"Ferratum\",\"url\":\"https://www.ferratum.se\",\"description\":\"Snabb utbetalning — pengarna på kontot samma dag\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"316\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"Svea Ekonomi\",\"url\":\"https://www.svea.com\",\"description\":\"Etablerat finansbolag med breda lånemöjligheter\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"3.9\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"272\"}}}]}";
 const ARTICLE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Topplånen för småföretagare 2026 — Jämför 7 Alternativ\",\"description\":\"Hitta det bästa lånet för ditt företag 2026\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"author\":{\"@type\":\"Organization\",\"name\":\"Topplånkollen\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Topplånkollen\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://topplanenkollen.vercel.app\"}}";
 const FAQ_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilket är det bästa företagslånet 2026?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Det bästa företagslånet 2026 beror på dina specifika behov. Jämför alternativ som Lendo, Sambla och Zmarta för att hitta det som passar dig.\"}},{\"@type\":\"Question\",\"name\":\"Hur ansöker jag om ett företagslån?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"För att ansöka om ett företagslån, välj en långivare, fyll i ansökan online och bifoga nödvändiga dokument som visar ditt företags ekonomi.\"}},{\"@type\":\"Question\",\"name\":\"Vad krävs för att få ett företagslån?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Vanligtvis krävs en stabil kreditvärdighet, affärsplan och ibland säkerhet. Kraven varierar mellan långivare, så kontrollera deras specifika behov.\"}},{\"@type\":\"Question\",\"name\":\"Är det svårt att få företagslån som småföretagare?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Det kan vara utmanande, men inte omöjligt. Många långivare har specifika produkter för småföretag. Förbered din ansökan noggrant för att öka dina chanser.\"}},{\"@type\":\"Question\",\"name\":\"Vilka avgifter tillkommer vid företagslån?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Vanliga avgifter inkluderar uppläggningsavgift, administrationsavgift och aviavgifter. Det är viktigt att läsa det finstilta för att förstå alla kostnader.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag betala av företagslånet i förtid?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Många långivare tillåter förtidsbetalning, men det kan tillkomma en avgift. Kolla med din långivare för att förstå deras policy kring detta.\"}},{\"@type\":\"Question\",\"name\":\"Hur påverkar ett företagslån min kreditvärdighet?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ett företagslån kan påverka din kreditvärdighet både positivt och negativt. Att betala i tid kan förbättra den, medan missade betalningar kan försämra den.\"}},{\"@type\":\"Question\",\"name\":\"Vad är skillnaden mellan säkrade och osäkrade lån?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Säkrade lån kräver säkerhet, som fastigheter, medan osäkrade lån baseras på kreditvärdighet. Säkrade lån har oftast lägre ränta.\"}}]}";
 
@@ -178,12 +178,7 @@ export default function Home({ providers, year, month, updated }) {
               <div style={{ display:'inline-flex', alignItems:'center', gap:5,
                 background:'#f0fdf4', color:'#15803d', padding:'4px 12px', borderRadius:20,
                 fontSize:12, fontWeight:700 }}>
-                ✓ Granskat av Topplånkollen redaktion
-              </div>
-              <div style={{ display:'inline-flex', alignItems:'center', gap:5,
-                background:'#fefce8', color:'#854d0e', padding:'4px 12px', borderRadius:20,
-                fontSize:12, fontWeight:700 }}>
-                ✓ Baserat på 44 timmars research
+                ✓ Oberoende jämförelse
               </div>
             </div>
             <h1 style={{ fontSize:'clamp(26px,4vw,46px)', fontWeight:800,
@@ -250,9 +245,7 @@ export default function Home({ providers, year, month, updated }) {
               gap:16, flexWrap:'wrap' }}>
               <div>
                 <div style={{ fontSize:11, color:pc, fontWeight:700, marginBottom:4 }}>
-                  {sortBy==='pris' ? 'Billigaste alternativet just nu'
-                   : sortBy==='namn' ? 'Toppalternativ'
-                   : 'Högst betyg av våra redaktörer'}
+                  {sortBy==='pris' ? 'Billigaste alternativet just nu' : 'Redaktionens val'}
                 </div>
                 <div style={{ fontSize:20, fontWeight:800, color:'#0f172a', marginBottom:4 }}>
                   {sorted[0].name}
@@ -273,64 +266,23 @@ export default function Home({ providers, year, month, updated }) {
         
         <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
           {visible.map((p, i) => (
-            <div key={p.name} style={{
-              background:'#fff',
-              border: i===0 ? '2px solid '+pc : '1px solid #e2e8f0',
-              borderRadius:16, padding:'22px 26px',
-              position:'relative', boxShadow: i===0 ? '0 4px 24px '+pc+'18' : '0 1px 4px #0000000a',
-            }}>
-              {i===0 && (
-                <div style={{ position:'absolute', top:-15, left:22,
-                  background:pc, color:'#fff', fontSize:11,
-                  fontWeight:800, padding:'3px 14px', borderRadius:12, letterSpacing:'0.5px' }}>
-                  ⭐ REDAKTIONENS VAL
-                </div>
-              )}
+            <div key={p.name} style={{ background:'#fff', border: i===0 ? '2px solid '+pc : '1px solid #e2e8f0', borderRadius:16, padding:'22px 26px', position:'relative', boxShadow: i===0 ? '0 4px 24px '+pc+'18' : '0 1px 4px #0000000a' }}>
+              {i===0 && <div style={{ position:'absolute', top:-15, left:22, background:pc, color:'#fff', fontSize:11, fontWeight:800, padding:'3px 14px', borderRadius:12, letterSpacing:'0.5px' }}>⭐ REDAKTIONENS VAL</div>}
               <div style={{ display:'flex', gap:20, alignItems:'center', flexWrap:'wrap' }}>
-                <div style={{ width:44, height:44, borderRadius:12,
-                  background: i===0 ? pcLight : '#f8fafc',
-                  display:'flex', alignItems:'center', justifyContent:'center',
-                  fontWeight:800, fontSize:16, color: i===0 ? pc : '#64748b',
-                  flexShrink:0, border:'1px solid '+(i===0 ? pcMed : '#e2e8f0') }}>
+                <div style={{ width:44, height:44, borderRadius:12, background: i===0 ? pcLight : '#f8fafc', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:800, fontSize:16, color: i===0 ? pc : '#64748b', flexShrink:0, border:'1px solid '+(i===0 ? pcMed : '#e2e8f0') }}>
                   {['1','2','3','4','5'][i] || (i+1)}
                 </div>
                 <div style={{ flex:1, minWidth:200 }}>
-                  <div style={{ fontWeight:800, fontSize:18, color:'#0f172a',
-                    marginBottom:3 }}>{p.name}</div>
-                  <div style={{ fontSize:13, color:'#64748b',
-                    marginBottom:10 }}>{p.description}</div>
-                  {p.pros && (
-                    <div style={{ display:'flex', flexDirection:'column', gap:5 }}>
-                      {p.pros.map((pro, j) => (
-                        <div key={j} style={{ display:'flex', gap:7, alignItems:'flex-start',
-                          fontSize:13 }}>
-                          <span style={{ color:pc, fontWeight:700,
-                            flexShrink:0 }}>✓</span>
-                          <span style={{ color:'#374151' }}>{pro}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  <div style={{ fontWeight:800, fontSize:18, color:'#0f172a', marginBottom:3 }}>{p.name}</div>
+                  <div style={{ fontSize:13, color:'#64748b', marginBottom:10 }}>{p.description}</div>
+                  {p.pros && <div style={{ display:'flex', flexDirection:'column', gap:5 }}>{p.pros.map((pro, j) => (<div key={j} style={{ display:'flex', gap:7, alignItems:'flex-start', fontSize:13 }}><span style={{ color:pc, fontWeight:700, flexShrink:0 }}>✓</span><span style={{ color:'#374151' }}>{pro}</span></div>))}</div>}
                 </div>
-                <div style={{ textAlign:'right', minWidth:190,
-                  display:'flex', flexDirection:'column',
-                  alignItems:'flex-end', gap:8 }}>
-                  <div style={{ fontSize:22, fontWeight:800, color:pc }}>
-                    {p.currentPrice || p.price}
-                  </div>
+                <div style={{ textAlign:'right', minWidth:190, display:'flex', flexDirection:'column', alignItems:'flex-end', gap:8 }}>
+                  <div style={{ fontSize:22, fontWeight:800, color:pc }}>{p.currentPrice || p.price}</div>
                   <Stars score={p.score} />
-                  <div style={{ background:'#f0fdf4', color:'#15803d',
-                    fontSize:11, fontWeight:700, padding:'3px 10px',
-                    borderRadius:8 }}>{p.badge}</div>
+                  <div style={{ background:'#f0fdf4', color:'#15803d', fontSize:11, fontWeight:700, padding:'3px 10px', borderRadius:8 }}>{p.badge}</div>
                   <AffBtn url={p.url} name={p.name} primary={i===0} />
-                  <button onClick={() => toggleSelect(p.name)}
-                    style={{ padding:'7px 14px', borderRadius:8, fontSize:12, fontWeight:600,
-                      cursor: selected.includes(p.name) || selected.length < 3 ? 'pointer' : 'not-allowed',
-                      fontFamily:'Inter,sans-serif', border:'1px solid',
-                      borderColor: selected.includes(p.name) ? pc : '#e2e8f0',
-                      background: selected.includes(p.name) ? pcLight : '#fff',
-                      color: selected.includes(p.name) ? pc : '#64748b',
-                      opacity: !selected.includes(p.name) && selected.length >= 3 ? 0.4 : 1 }}>
+                  <button onClick={() => toggleSelect(p.name)} style={{ padding:'7px 14px', borderRadius:8, fontSize:12, fontWeight:600, cursor: selected.includes(p.name) || selected.length < 3 ? 'pointer' : 'not-allowed', fontFamily:'Inter,sans-serif', border:'1px solid', borderColor: selected.includes(p.name) ? pc : '#e2e8f0', background: selected.includes(p.name) ? pcLight : '#fff', color: selected.includes(p.name) ? pc : '#64748b', opacity: !selected.includes(p.name) && selected.length >= 3 ? 0.4 : 1 }}>
                     {selected.includes(p.name) ? '✓ Vald' : '+ Jämför'}
                   </button>
                 </div>
@@ -591,10 +543,10 @@ export default function Home({ providers, year, month, updated }) {
         <div style={{ maxWidth:760, margin:'0 auto' }}>
           <p style={{ fontSize:14, color:'#64748b', marginBottom:12, fontWeight:600 }}>Läs mer:</p>
           <div style={{ display:'flex', gap:14, flexWrap:'wrap' }}>
-            <a href="/utan-uc" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Privatlån utan UC-Kontroll</a>
-            · <a href="/med-betalningsanmarkning" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Privatlån med Betalningsanmärkning</a>
-            · <a href="/snabbt" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Snabbt Privatlån — Svar Direkt</a>
-            · <a href="/lagrad-ranta" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Privatlån med Lägst Ränta</a>
+            <a href="/utan-uc" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Privatlån utan UC-kontroll</a>
+            · <a href="/med-betalningsanmarkning" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Privatlån med betalningsanmärkning</a>
+            · <a href="/snabbt" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Snabbt privatlån — svar direkt</a>
+            · <a href="/lagrad-ranta" style={{color:'#1d4ed8',fontWeight:600,textDecoration:'none',fontSize:14}}>Privatlån med lägst ränta</a>
           </div>
         </div>
       </section>
@@ -621,11 +573,11 @@ export default function Home({ providers, year, month, updated }) {
             <div>
               <div style={{ fontWeight:700, color:'#e2e8f0', marginBottom:14, fontSize:12, textTransform:'uppercase', letterSpacing:'0.5px' }}>Se även</div>
               <div style={{ display:'flex', flexDirection:'column', gap:10, fontSize:14 }}>
-                <Link href="/utan-uc" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Privatlån utan UC-Kontroll</Link>
-                <Link href="/med-betalningsanmarkning" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Privatlån med Betalningsanmärkning</Link>
-                <Link href="/snabbt" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Snabbt Privatlån — Svar Direkt</Link>
-                <Link href="/lagrad-ranta" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Privatlån med Lägst Ränta</Link>
-                <Link href="/samlingslan" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa Samlingslån</Link>
+                <Link href="/utan-uc" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Privatlån utan UC-kontroll</Link>
+                <Link href="/med-betalningsanmarkning" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Privatlån med betalningsanmärkning</Link>
+                <Link href="/snabbt" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Snabbt privatlån — svar direkt</Link>
+                <Link href="/lagrad-ranta" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Privatlån med lägst ränta</Link>
+                <Link href="/samlingslan" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa samlingslån</Link>
               </div>
             </div>
             <div>
